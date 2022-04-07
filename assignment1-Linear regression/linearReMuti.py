@@ -28,8 +28,9 @@ Y = data.iloc[:,2]
 X = (X-np.mean(X))/np.std(X)
 Y = (Y-np.mean(Y))/np.std(Y)
 X.insert(0,"Ones",1)
-x = np.mat(X.values)
+x = np.mat(X.values )
 y = np.mat(Y.values)
+print(x)
 # define
 theta = np.mat(np.zeros(x.shape[1]))
 iter = 1500
